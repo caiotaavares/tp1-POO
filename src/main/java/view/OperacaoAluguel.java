@@ -142,6 +142,11 @@ public class OperacaoAluguel extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Cadastrar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         FormaPBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Boleto", "Débito", "Crédito", "Dinheiro" }));
 
@@ -283,6 +288,11 @@ public class OperacaoAluguel extends javax.swing.JFrame {
     private void DataATextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DataATextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_DataATextActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        controller.AlugarImovel();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -111,6 +111,7 @@ public class CadastroCliente extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(102, 255, 204));
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Cadastrar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,6 +219,7 @@ public class CadastroCliente extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        controller.CadastrarCliente();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void EnderecoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnderecoTextActionPerformed
