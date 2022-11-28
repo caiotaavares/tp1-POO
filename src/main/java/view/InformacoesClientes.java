@@ -44,7 +44,7 @@ public class InformacoesClientes extends javax.swing.JFrame {
         Tabela = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         Titulo.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         Titulo.setForeground(new java.awt.Color(0, 51, 51));
@@ -128,6 +128,7 @@ public class InformacoesClientes extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

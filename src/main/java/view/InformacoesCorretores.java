@@ -41,7 +41,7 @@ public class InformacoesCorretores extends javax.swing.JFrame {
         Titulo = new javax.swing.JLabel();
         MesT = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         FuncionarioBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todos", "funcionário do mês" }));
 
@@ -104,6 +104,7 @@ public class InformacoesCorretores extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

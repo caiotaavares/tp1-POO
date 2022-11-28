@@ -67,7 +67,7 @@ public class CadastroImovel extends javax.swing.JFrame {
         ImovelBox = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
 
         Titulo.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -299,6 +299,7 @@ public class CadastroImovel extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void DataCTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DataCTextActionPerformed

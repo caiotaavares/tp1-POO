@@ -49,7 +49,7 @@ public class CadastroSeguro extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         Titulo.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         Titulo.setForeground(new java.awt.Color(0, 51, 51));
@@ -152,6 +152,7 @@ public class CadastroSeguro extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void CodigoTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CodigoTextActionPerformed

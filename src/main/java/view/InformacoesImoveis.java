@@ -50,7 +50,7 @@ public class InformacoesImoveis extends javax.swing.JFrame {
         ValorTex = new javax.swing.JTextField();
         NomeTex = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -180,6 +180,7 @@ public class InformacoesImoveis extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void NomeTexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomeTexActionPerformed
