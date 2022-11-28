@@ -4,17 +4,22 @@
  */
 package view;
 
+import Controller.InformacoesSeguroController;
+
 /**
  *
  * @author João Pedro
  */
 public class InformacoesSeguro extends javax.swing.JFrame {
 
+    private final InformacoesSeguroController controller;
+
     /**
      * Creates new form InformacoesSeguro
      */
     public InformacoesSeguro() {
         initComponents();
+        controller = new InformacoesSeguroController(this);
     }
 
     /**

@@ -4,17 +4,23 @@
  */
 package view;
 
+import Controller.CadastroCorretorController;
+import javax.swing.JTextField;
+
 /**
  *
  * @author João Pedro
  */
 public class CadastroCorretor extends javax.swing.JFrame {
 
+    private final CadastroCorretorController controller;
+
     /**
      * Creates new form CadastroCorretor
      */
     public CadastroCorretor() {
         initComponents();
+        controller = new CadastroCorretorController(this);
     }
 
     /**
@@ -281,4 +287,86 @@ public class CadastroCorretor extends javax.swing.JFrame {
     private javax.swing.JLabel Titulo;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
+
+    public JTextField getCEPText() {
+        return CEPText;
+    }
+
+    public void setCEPText(JTextField CEPText) {
+        this.CEPText = CEPText;
+    }
+
+    public JTextField getCPFText() {
+        return CPFText;
+    }
+
+    public void setCPFText(JTextField CPFText) {
+        this.CPFText = CPFText;
+    }
+
+    public JTextField getDataText() {
+        return DataText;
+    }
+
+    public void setDataText(JTextField DataText) {
+        this.DataText = DataText;
+    }
+
+    public JTextField getEmailText() {
+        return EmailText;
+    }
+
+    public void setEmailText(JTextField EmailText) {
+        this.EmailText = EmailText;
+    }
+
+    public JTextField getEnderecoText() {
+        return EnderecoText;
+    }
+
+    public void setEnderecoText(JTextField EnderecoText) {
+        this.EnderecoText = EnderecoText;
+    }
+
+    public JTextField getNacimentoText() {
+        return NacimentoText;
+    }
+
+    public void setNacimentoText(JTextField NacimentoText) {
+        this.NacimentoText = NacimentoText;
+    }
+
+    public JTextField getNomeText() {
+        return NomeText;
+    }
+
+    public void setNomeText(JTextField NomeText) {
+        this.NomeText = NomeText;
+    }
+
+    public JTextField getRgText() {
+        return RgText;
+    }
+
+    public void setRgText(JTextField RgText) {
+        this.RgText = RgText;
+    }
+
+    public JTextField getSalarioText() {
+        return SalarioText;
+    }
+
+    public void setSalarioText(JTextField SalarioText) {
+        this.SalarioText = SalarioText;
+    }
+
+    public JTextField getTelefoneText() {
+        return TelefoneText;
+    }
+
+    public void setTelefoneText(JTextField TelefoneText) {
+        this.TelefoneText = TelefoneText;
+    }
+
+
 }

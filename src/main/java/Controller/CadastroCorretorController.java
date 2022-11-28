@@ -12,8 +12,24 @@ import view.CadastroCorretor;
  */
 public class CadastroCorretorController {
 
+    private final CadastroCorretor view; 
+
     public CadastroCorretorController(CadastroCorretor view) {
-    
+    this.view = view;
     }
     
+    
+    public void cadastrarCorretor(){
+        String nome = view.getNomeText().getText();
+        String cpf = view.getCPFText().getText();
+        String rg = view.getRgText().getText();
+        String endereco = view.getEnderecoText().getText();
+        String email = view.getEmailText().getText();
+        String cep = view.getCEPText().getText();
+        String telefone = view.getTelefoneText().getText();
+        String salario = view.getSalarioText().getText();
+        String nascimento = view.getNacimentoText().getText();
+        String dataAd = view.getDataText().getText();
+        
+    }
 }

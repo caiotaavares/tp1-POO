@@ -4,17 +4,24 @@
  */
 package view;
 
+import Controller.OperacaoAluguelController;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+
 /**
  *
  * @author João Pedro
  */
 public class OperacaoAluguel extends javax.swing.JFrame {
 
+    private final OperacaoAluguelController controller;
+
     /**
      * Creates new form OperacaoAluguel
      */
     public OperacaoAluguel() {
         initComponents();
+        controller = new OperacaoAluguelController(this);
     }
 
     /**
@@ -339,4 +346,102 @@ public class OperacaoAluguel extends javax.swing.JFrame {
     private javax.swing.JTextField ValorTText;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
+
+    public JTextField getBandeiraText() {
+        return BandeiraText;
+    }
+
+    public void setBandeiraText(JTextField BandeiraText) {
+        this.BandeiraText = BandeiraText;
+    }
+
+    public JTextField getClienteText() {
+        return ClienteText;
+    }
+
+    public void setClienteText(JTextField ClienteText) {
+        this.ClienteText = ClienteText;
+    }
+
+    public JTextField getCodigoIText() {
+        return CodigoIText;
+    }
+
+    public void setCodigoIText(JTextField CodigoIText) {
+        this.CodigoIText = CodigoIText;
+    }
+
+    public JTextField getCorretorText() {
+        return CorretorText;
+    }
+
+    public void setCorretorText(JTextField CorretorText) {
+        this.CorretorText = CorretorText;
+    }
+
+    public JTextField getDataAText() {
+        return DataAText;
+    }
+
+    public void setDataAText(JTextField DataAText) {
+        this.DataAText = DataAText;
+    }
+
+    public JTextField getDataDText() {
+        return DataDText;
+    }
+
+    public void setDataDText(JTextField DataDText) {
+        this.DataDText = DataDText;
+    }
+
+    public String getFormaPBox() {
+        return FormaPBox.getSelectedItem().toString();
+    }
+
+    public void setFormaPBox(JComboBox<String> FormaPBox) {
+        this.FormaPBox = FormaPBox;
+    }
+
+    public JTextField getNomeText() {
+        return NomeText;
+    }
+
+    public void setNomeText(JTextField NomeText) {
+        this.NomeText = NomeText;
+    }
+
+    public JTextField getNumeroText() {
+        return NumeroText;
+    }
+
+    public void setNumeroText(JTextField NumeroText) {
+        this.NumeroText = NumeroText;
+    }
+
+    public JTextField getPagamentoMText() {
+        return PagamentoMText;
+    }
+
+    public void setPagamentoMText(JTextField PagamentoMText) {
+        this.PagamentoMText = PagamentoMText;
+    }
+
+    public JTextField getSegurosText() {
+        return SegurosText;
+    }
+
+    public void setSegurosText(JTextField SegurosText) {
+        this.SegurosText = SegurosText;
+    }
+
+    public JTextField getValorTText() {
+        return ValorTText;
+    }
+
+    public void setValorTText(JTextField ValorTText) {
+        this.ValorTText = ValorTText;
+    }
+
+
 }

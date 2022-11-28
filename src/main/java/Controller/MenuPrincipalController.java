@@ -11,8 +11,10 @@ import view.MenuPrincipal;
  * @author João Pedro
  */
 public class MenuPrincipalController {
+
+    private final MenuPrincipal view;
     
     public MenuPrincipalController(MenuPrincipal view){
-    
+     this.view = view;
     }
 }

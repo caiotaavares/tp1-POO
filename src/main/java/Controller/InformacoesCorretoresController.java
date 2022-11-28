@@ -12,7 +12,10 @@ import view.InformacoesCorretores;
  */
 public class InformacoesCorretoresController {
 
+    private final InformacoesCorretores view;
+
     public InformacoesCorretoresController(InformacoesCorretores view) {
+    this.view = view;
     }
     
 }

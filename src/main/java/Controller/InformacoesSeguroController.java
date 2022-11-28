@@ -12,7 +12,10 @@ import view.InformacoesSeguro;
  */
 public class InformacoesSeguroController {
 
+    private final InformacoesSeguro view;
+
     public InformacoesSeguroController(InformacoesSeguro view) {
+    this.view = view;
     }
     
 }

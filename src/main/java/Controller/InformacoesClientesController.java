@@ -12,7 +12,10 @@ import view.InformacoesClientes;
  */
 public class InformacoesClientesController {
 
+    private final InformacoesClientes view;
+
     public InformacoesClientesController(InformacoesClientes view) {
+    this.view = view;
     }
     
 }

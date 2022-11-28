@@ -4,17 +4,24 @@
  */
 package view;
 
+import Controller.CadastroImovelController;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+
 /**
  *
  * @author João Pedro
  */
 public class CadastroImovel extends javax.swing.JFrame {
 
+    private final CadastroImovelController controller;
+
     /**
      * Creates new form CadastroImovel
      */
     public CadastroImovel() {
         initComponents();
+        controller = new CadastroImovelController(this);
     }
 
     /**
@@ -370,4 +377,118 @@ public class CadastroImovel extends javax.swing.JFrame {
     private javax.swing.JTextField VVendaText;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
+
+    public JTextField getAndarText() {
+        return AndarText;
+    }
+
+    public void setAndarText(JTextField AndarText) {
+        this.AndarText = AndarText;
+    }
+
+    public JTextField getAreaCText() {
+        return AreaCText;
+    }
+
+    public void setAreaCText(JTextField AreaCText) {
+        this.AreaCText = AreaCText;
+    }
+
+    public JTextField getAreaText() {
+        return AreaText;
+    }
+
+    public void setAreaText(JTextField AreaText) {
+        this.AreaText = AreaText;
+    }
+
+    public JTextField getBanheiroText() {
+        return BanheiroText;
+    }
+
+    public void setBanheiroText(JTextField BanheiroText) {
+        this.BanheiroText = BanheiroText;
+    }
+
+    public JTextField getDataCText() {
+        return DataCText;
+    }
+
+    public void setDataCText(JTextField DataCText) {
+        this.DataCText = DataCText;
+    }
+
+    public JTextField getDormitorioText() {
+        return DormitorioText;
+    }
+
+    public void setDormitorioText(JTextField DormitorioText) {
+        this.DormitorioText = DormitorioText;
+    }
+
+    public JTextField getEnderecoText() {
+        return EnderecoText;
+    }
+
+    public void setEnderecoText(JTextField EnderecoText) {
+        this.EnderecoText = EnderecoText;
+    }
+
+    public String getImovelBox() {
+        return ImovelBox.getSelectedItem().toString();
+    }
+
+    public void setImovelBox(JComboBox<String> ImovelBox) {
+        this.ImovelBox = ImovelBox;
+    }
+
+    public JTextField getImpostoText() {
+        return ImpostoText;
+    }
+
+    public void setImpostoText(JTextField ImpostoText) {
+        this.ImpostoText = ImpostoText;
+    }
+
+    public JTextField getVAluguelText() {
+        return VAluguelText;
+    }
+
+    public void setVAluguelText(JTextField VAluguelText) {
+        this.VAluguelText = VAluguelText;
+    }
+
+    public JTextField getVCondomioText() {
+        return VCondomioText;
+    }
+
+    public void setVCondomioText(JTextField VCondomioText) {
+        this.VCondomioText = VCondomioText;
+    }
+
+    public JTextField getVGaragemText() {
+        return VGaragemText;
+    }
+
+    public void setVGaragemText(JTextField VGaragemText) {
+        this.VGaragemText = VGaragemText;
+    }
+
+    public JTextField getVIPTUText() {
+        return VIPTUText;
+    }
+
+    public void setVIPTUText(JTextField VIPTUText) {
+        this.VIPTUText = VIPTUText;
+    }
+
+    public JTextField getVVendaText() {
+        return VVendaText;
+    }
+
+    public void setVVendaText(JTextField VVendaText) {
+        this.VVendaText = VVendaText;
+    }
+
+
 }

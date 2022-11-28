@@ -4,17 +4,22 @@
  */
 package view;
 
+import Controller.InformacoesCorretoresController;
+
 /**
  *
  * @author João Pedro
  */
 public class InformacoesCorretores extends javax.swing.JFrame {
 
+    private final InformacoesCorretoresController controller;
+
     /**
      * Creates new form InformacoesCorretores
      */
     public InformacoesCorretores() {
         initComponents();
+        controller = new InformacoesCorretoresController(this);
     }
 
     /**

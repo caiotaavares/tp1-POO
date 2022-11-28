@@ -4,17 +4,24 @@
  */
 package view;
 
+import Controller.OperacaoVendaController;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+
 /**
  *
  * @author João Pedro
  */
 public class OperacaoVenda extends javax.swing.JFrame {
 
+    private final OperacaoVendaController controller;
+
     /**
      * Creates new form OperacaoVenda
      */
     public OperacaoVenda() {
         initComponents();
+        controller = new OperacaoVendaController(this);
     }
 
     /**
@@ -295,4 +302,78 @@ public class OperacaoVenda extends javax.swing.JFrame {
     private javax.swing.JTextField ValorTText;
     private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
+
+    public JTextField getBandeiraText() {
+        return BandeiraText;
+    }
+
+    public void setBandeiraText(JTextField BandeiraText) {
+        this.BandeiraText = BandeiraText;
+    }
+
+    public JTextField getClienteText() {
+        return ClienteText;
+    }
+
+    public void setClienteText(JTextField ClienteText) {
+        this.ClienteText = ClienteText;
+    }
+
+    public JTextField getCodigoIText() {
+        return CodigoIText;
+    }
+
+    public void setCodigoIText(JTextField CodigoIText) {
+        this.CodigoIText = CodigoIText;
+    }
+
+    public JTextField getCorretorText() {
+        return CorretorText;
+    }
+
+    public void setCorretorText(JTextField CorretorText) {
+        this.CorretorText = CorretorText;
+    }
+
+    public JTextField getDataVText() {
+        return DataVText;
+    }
+
+    public void setDataVText(JTextField DataVText) {
+        this.DataVText = DataVText;
+    }
+
+    public String getFormaPBox() {
+        return FormaPBox.getSelectedItem().toString();
+    }
+
+    public void setFormaPBox(JComboBox<String> FormaPBox) {
+        this.FormaPBox = FormaPBox;
+    }
+
+    public JTextField getNomeText() {
+        return NomeText;
+    }
+
+    public void setNomeText(JTextField NomeText) {
+        this.NomeText = NomeText;
+    }
+
+    public JTextField getNumeroText() {
+        return NumeroText;
+    }
+
+    public void setNumeroText(JTextField NumeroText) {
+        this.NumeroText = NumeroText;
+    }
+
+    public JTextField getValorTText() {
+        return ValorTText;
+    }
+
+    public void setValorTText(JTextField ValorTText) {
+        this.ValorTText = ValorTText;
+    }
+
+
 }

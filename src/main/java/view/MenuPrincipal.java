@@ -4,17 +4,22 @@
  */
 package view;
 
+import Controller.MenuPrincipalController;
+
 /**
  *
  * @author João Pedro
  */
 public class MenuPrincipal extends javax.swing.JFrame {
 
+    private final MenuPrincipalController controller;
+
     /**
      * Creates new form MenuPrincipal
      */
     public MenuPrincipal() {
         initComponents();
+        controller = new MenuPrincipalController(this);
     }
 
     /**

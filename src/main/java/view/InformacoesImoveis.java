@@ -4,17 +4,22 @@
  */
 package view;
 
+import Controller.InformacoesImoveisController;
+
 /**
  *
  * @author João Pedro
  */
 public class InformacoesImoveis extends javax.swing.JFrame {
 
+    private final InformacoesImoveisController controller;
+
     /**
      * Creates new form InformacoesImoveis
      */
     public InformacoesImoveis() {
         initComponents();
+        controller = new InformacoesImoveisController(this);
     }
 
     /**
