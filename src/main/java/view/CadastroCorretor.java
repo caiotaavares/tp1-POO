@@ -5,6 +5,7 @@
 package view;
 
 import Controller.CadastroCorretorController;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -368,5 +369,8 @@ public class CadastroCorretor extends javax.swing.JFrame {
         this.TelefoneText = TelefoneText;
     }
 
+    public void mensagem(String menssage){
+        JOptionPane.showMessageDialog(null, menssage);
+    }
 
 }

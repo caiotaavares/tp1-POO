@@ -5,6 +5,9 @@
 package view;
 
 import Controller.InformacoesCorretoresController;
+import javax.swing.JComboBox;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
 /**
  *
@@ -146,4 +149,46 @@ public class InformacoesCorretores extends javax.swing.JFrame {
     private javax.swing.JLabel Titulo;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
+
+    public boolean getFuncionarioBox() {
+        String al = FuncionarioBox.getSelectedItem().toString();
+        String TR = "Todos";
+        if(al==TR){
+            return false;
+        }
+        else{
+            return true;
+        }
+        
+    }
+
+    public void setFuncionarioBox(JComboBox<String> FuncionarioBox) {
+        this.FuncionarioBox = FuncionarioBox;
+    }
+
+    public String getMesBox() {
+        return MesBox.getSelectedItem().toString();
+    }
+
+    public void setMesBox(JComboBox<String> MesBox) {
+        this.MesBox = MesBox;
+    }
+
+    public JScrollPane getTabela() {
+        return Tabela;
+    }
+
+    public void setTabela(JScrollPane Tabela) {
+        this.Tabela = Tabela;
+    }
+
+    public JTable getjTable1() {
+        return jTable1;
+    }
+
+    public void setjTable1(JTable jTable1) {
+        this.jTable1 = jTable1;
+    }
+
+
 }

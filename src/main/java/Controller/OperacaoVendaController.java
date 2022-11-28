@@ -31,6 +31,9 @@ public class OperacaoVendaController {
         String nome = view.getNomeText().getText();
         String bandeira = view.getBandeiraText().getText();
         String numero = view.getNumeroText().getText();
+        
+        
+        view.mensagem("Venda cadastrada");
     }
-    }
+}
     

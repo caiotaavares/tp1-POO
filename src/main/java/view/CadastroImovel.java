@@ -6,6 +6,7 @@ package view;
 
 import Controller.CadastroImovelController;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -488,6 +489,10 @@ public class CadastroImovel extends javax.swing.JFrame {
 
     public void setVVendaText(JTextField VVendaText) {
         this.VVendaText = VVendaText;
+    }
+    
+    public void mensagem(String menssage){
+        JOptionPane.showMessageDialog(null, menssage);
     }
 
 

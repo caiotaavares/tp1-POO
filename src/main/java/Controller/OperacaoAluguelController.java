@@ -36,6 +36,10 @@ public class OperacaoAluguelController {
         String nome = view.getNomeText().getText();
         String bandeira = view.getBandeiraText().getText();
         String numero = view.getNumeroText().getText();
+        
+        
+        
+        view.mensagem("Aluguel cadastrado");
     }
     
 }

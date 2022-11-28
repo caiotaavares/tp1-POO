@@ -6,6 +6,7 @@ package view;
 
 import Controller.OperacaoAluguelController;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -443,5 +444,8 @@ public class OperacaoAluguel extends javax.swing.JFrame {
         this.ValorTText = ValorTText;
     }
 
+    public void mensagem(String menssage){
+        JOptionPane.showMessageDialog(null, menssage);
+    }
 
 }

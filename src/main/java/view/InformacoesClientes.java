@@ -5,6 +5,9 @@
 package view;
 
 import Controller.InformacoesClientesController;
+import javax.swing.JComboBox;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
 
 /**
  *
@@ -173,4 +176,37 @@ public class InformacoesClientes extends javax.swing.JFrame {
     private javax.swing.JLabel Titulo;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
+
+    public boolean getAlugueisBox() {
+        String al = AlugueisBox.getSelectedItem().toString();
+        String TR = "Atrasados";
+        if(al==TR){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
+    public void setAlugueisBox(JComboBox<String> AlugueisBox) {
+        this.AlugueisBox = AlugueisBox;
+    }
+
+    public JTextField getNomeText() {
+        return NomeText;
+    }
+
+    public void setNomeText(JTextField NomeText) {
+        this.NomeText = NomeText;
+    }
+
+    public JScrollPane getTabela() {
+        return Tabela;
+    }
+
+    public void setTabela(JScrollPane Tabela) {
+        this.Tabela = Tabela;
+    }
+
+
 }

@@ -6,6 +6,7 @@ package view;
 
 import Controller.CadastroClienteController;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -350,6 +351,9 @@ public class CadastroCliente extends javax.swing.JFrame {
         this.jButton2 = jButton2;
     }
 
+    public void mensagem(String menssage){
+        JOptionPane.showMessageDialog(null, menssage);
+    }
 
 
 }

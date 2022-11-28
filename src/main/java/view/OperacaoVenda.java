@@ -6,6 +6,7 @@ package view;
 
 import Controller.OperacaoVendaController;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
@@ -374,6 +375,9 @@ public class OperacaoVenda extends javax.swing.JFrame {
     public void setValorTText(JTextField ValorTText) {
         this.ValorTText = ValorTText;
     }
-
+    
+    public void mensagem(String menssage){
+        JOptionPane.showMessageDialog(null, menssage);
+    }
 
 }

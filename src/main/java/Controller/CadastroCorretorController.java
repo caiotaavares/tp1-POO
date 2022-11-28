@@ -31,5 +31,7 @@ public class CadastroCorretorController {
         String nascimento = view.getNacimentoText().getText();
         String dataAd = view.getDataText().getText();
         
+        
+        view.mensagem("Corretor Cadastrado");
     }
 }

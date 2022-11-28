@@ -5,6 +5,9 @@
 package view;
 
 import Controller.InformacoesImoveisController;
+import javax.swing.JComboBox;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -235,4 +238,63 @@ public class InformacoesImoveis extends javax.swing.JFrame {
     private javax.swing.JLabel ValortoT;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
+
+    public String getAlugueisBox() {
+        return AlugueisBox.getSelectedItem().toString();
+    }
+
+    public void setAlugueisBox(JComboBox<String> AlugueisBox) {
+        this.AlugueisBox = AlugueisBox;
+    }
+
+    public String getDisponivelBox() {
+        return DisponivelBox.getSelectedItem().toString();
+    }
+
+    public void setDisponivelBox(JComboBox<String> DisponivelBox) {
+        this.DisponivelBox = DisponivelBox;
+    }
+
+    public String getMesRefBox() {
+        return MesRefBox.getSelectedItem().toString();
+    }
+
+    public void setMesRefBox(JComboBox<String> MesRefBox) {
+        this.MesRefBox = MesRefBox;
+    }
+
+    public JTextField getNomeTex() {
+        return NomeTex;
+    }
+
+    public void setNomeTex(JTextField NomeTex) {
+        this.NomeTex = NomeTex;
+    }
+
+    public String getTipoImovel() {
+        return TipoImovel.getSelectedItem().toString();
+    }
+
+    public void setTipoImovel(JComboBox<String> TipoImovel) {
+        this.TipoImovel = TipoImovel;
+    }
+
+    public JTextField getValorTex() {
+        return ValorTex;
+    }
+
+    public void setValorTex(JTextField ValorTex) {
+        this.ValorTex = ValorTex;
+    }
+
+    public JTable getjTable1() {
+        return jTable1;
+    }
+
+    public void setjTable1(JTable jTable1) {
+        this.jTable1 = jTable1;
+    }
+
+
+
 }

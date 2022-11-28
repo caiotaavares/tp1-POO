@@ -46,5 +46,8 @@ public class CadastroImovelController {
         float condominio  = Integer.parseInt(con);
         String im = view.getImpostoText().getText();
         float imposto = Integer.parseInt(im);
+        
+        
+        view.mensagem("Imóvel Cadastrado");
     }
 }

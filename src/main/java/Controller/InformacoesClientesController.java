@@ -18,4 +18,7 @@ public class InformacoesClientesController {
     this.view = view;
     }
     
+    public void BuscarClientes(){
+    
+    }
 }
