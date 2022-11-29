@@ -4,6 +4,7 @@
  */
 package Controller;
 
+import model.Cliente;
 import view.CadastroCliente;
 
 /**
@@ -11,27 +12,35 @@ import view.CadastroCliente;
  * @author João Pedro
  */
 public class CadastroClienteController {
-
+    
     private final CadastroCliente view;
     
-    public CadastroClienteController(CadastroCliente view){
-    this.view = view;
+    public CadastroClienteController(CadastroCliente view) {
+        this.view = view;
     }
     
-    public void CadastrarCliente(){
+    public void CadastrarCliente() {
+        
+        Cliente cliente = new Cliente();
         
         String nome = view.getNomeText().getText();
+        cliente.setNome(nome);
         String cpf = view.getCPFText().getText();
+        cliente.setCpf(cpf);
         String rg = view.getRgText().getText();
+        cliente.setRg(rg);
         String endereco = view.getEnderecoText().getText();
+        cliente.setEndereco(endereco);
         String email = view.getEmailText().getText();
+        cliente.setEmail(email);
         String cep = view.getCEPText().getText();
+        cliente.setCep(cep);
         String telefone = view.getTelefoneText().getText();
+        cliente.setTelefone(telefone);
         String nascimento = view.getNacimentoText().getText();
-        
-        
+        cliente.setDataNascimento(nascimento);
         
         view.mensagem("Cliente cadastrado");
     }
     
-  }
+}

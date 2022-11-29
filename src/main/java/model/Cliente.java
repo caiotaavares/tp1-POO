@@ -36,4 +36,8 @@ public class Cliente extends Usuario {
         return "Cliente{" + "dataCadastro=" + dataCadastro + '}';
     }
 
+    public void setDataNascimento(String nascimento) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }
