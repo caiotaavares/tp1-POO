@@ -4,7 +4,12 @@
  */
 package model;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -21,6 +26,7 @@ public class Imobiliaria {
     private ArrayList<Seguro> seguros;
     private ArrayList<Usuario> corretores;
     private Configuracao configuracoes;
+    Path path = Path.of(".\\Imobiliarias.txt");
 
     public Imobiliaria() {
     }
@@ -111,4 +117,36 @@ public class Imobiliaria {
         this.configuracoes = configuracoes;
     }
 
+    public void cadastroImobiliaria(LocalDate dataCadastro, String nome, String cpf, String rg, String endereco,
+                                    String cep, String telefone, String email, int codigoUsuario, LocalDate dataNascimento) throws IOException {
+
+        if (Files.notExists(path)) {
+            Files.createFile(path);
+        }
+
+        String s = String.join(
+                System.getProperty("line.separator"),
+                dataCadastro.toString(),
+                nome.toString(),
+                cpf.toString(),
+                rg.toString(),
+                endereco.toString(),
+                cep.toString(),
+                telefone.toString(),
+                email.toString(),
+                String.valueOf(codigoUsuario),
+                dataNascimento.toString()
+        );
+
+        Files.writeString(path, s);
+    }
+
+    public String mostrarImobiliaria() throws IOException {
+        List<String> strings = Files.readAllLines(path);
+
+        for (String texto: strings) {
+            System.out.println(texto);
+        }
+        return null;
+    }
 }
