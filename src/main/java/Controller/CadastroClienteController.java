@@ -28,7 +28,7 @@ public class CadastroClienteController {
         String cep = view.getCEPText().getText();
         String telefone = view.getTelefoneText().getText();
         String nascimento = view.getNacimentoText().getText();
-        
+        String DataCa = view.getDataCadText().getText();
         
         
         view.mensagem("Cliente cadastrado");

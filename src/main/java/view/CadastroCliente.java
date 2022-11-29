@@ -34,7 +34,7 @@ public class CadastroCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        Titulo = new javax.swing.JLabel();
         NomeT1 = new javax.swing.JLabel();
         CPFT1 = new javax.swing.JLabel();
         NacimentoT1 = new javax.swing.JLabel();
@@ -43,6 +43,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         CEPT1 = new javax.swing.JLabel();
         EmailT1 = new javax.swing.JLabel();
         TelefoneT1 = new javax.swing.JLabel();
+        DataCad = new javax.swing.JLabel();
         NomeText = new javax.swing.JTextField();
         CPFText = new javax.swing.JTextField();
         NacimentoText = new javax.swing.JTextField();
@@ -51,13 +52,14 @@ public class CadastroCliente extends javax.swing.JFrame {
         CEPText = new javax.swing.JTextField();
         EmailText = new javax.swing.JTextField();
         TelefoneText = new javax.swing.JTextField();
+        DataCadText = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel1.setText("Cadastro dos Clientes");
+        Titulo.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        Titulo.setForeground(new java.awt.Color(0, 51, 51));
+        Titulo.setText("Cadastro dos Clientes");
 
         NomeT1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         NomeT1.setForeground(new java.awt.Color(0, 0, 0));
@@ -90,6 +92,10 @@ public class CadastroCliente extends javax.swing.JFrame {
         TelefoneT1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         TelefoneT1.setForeground(new java.awt.Color(0, 0, 0));
         TelefoneT1.setText("Telefone:");
+
+        DataCad.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        DataCad.setForeground(new java.awt.Color(0, 0, 0));
+        DataCad.setText("Data de Cadastro:");
 
         NomeText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,85 +130,100 @@ public class CadastroCliente extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(206, 206, 206)
-                .addComponent(jLabel1)
-                .addContainerGap(222, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(NomeT1)
-                            .addGap(7, 7, 7)
-                            .addComponent(NomeText, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(90, 90, 90)
-                            .addComponent(CPFT1)
-                            .addGap(16, 16, 16)
-                            .addComponent(CPFText, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(NacimentoT1)
-                            .addGap(13, 13, 13)
-                            .addComponent(NacimentoText, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(90, 90, 90)
-                            .addComponent(Rg1)
-                            .addGap(23, 23, 23)
-                            .addComponent(RgText, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(EnderecoT1)
-                            .addGap(13, 13, 13)
-                            .addComponent(EnderecoText, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(CEPT1)
-                            .addGap(6, 6, 6)
-                            .addComponent(CEPText, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(EmailT1)
-                            .addGap(44, 44, 44)
-                            .addComponent(EmailText, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(TelefoneT1)
-                            .addGap(9, 9, 9)
-                            .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(490, 490, 490)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(514, Short.MAX_VALUE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(NomeT1)
+                                        .addGap(21, 21, 21)
+                                        .addComponent(NomeText, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(76, 76, 76)
+                                        .addComponent(CPFT1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(CPFText, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(NacimentoT1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(NacimentoText, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(91, 91, 91)
+                                        .addComponent(Rg1)
+                                        .addGap(23, 23, 23)
+                                        .addComponent(RgText, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(EnderecoT1)
+                                            .addGap(13, 13, 13)
+                                            .addComponent(EnderecoText, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(CEPT1)
+                                            .addGap(6, 6, 6)
+                                            .addComponent(CEPText, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(EmailT1)
+                                            .addGap(44, 44, 44)
+                                            .addComponent(EmailText, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(10, 10, 10)
+                                            .addComponent(TelefoneT1)
+                                            .addGap(9, 9, 9)
+                                            .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(DataCad)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(DataCadText, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(206, 206, 206)
+                                .addComponent(Titulo)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(380, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(NomeT1)
-                        .addComponent(NomeText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(CPFT1)
-                        .addComponent(CPFText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(20, 20, 20)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(NacimentoT1)
-                        .addComponent(NacimentoText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(Rg1)
-                        .addComponent(RgText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(80, 80, 80)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(EnderecoT1)
-                        .addComponent(EnderecoText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(CEPT1)
-                        .addComponent(CEPText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(20, 20, 20)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(EmailT1)
-                        .addComponent(EmailText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TelefoneT1)
-                        .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(20, 20, 20)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(Titulo)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CPFT1)
+                            .addComponent(NomeText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NomeT1))
+                        .addGap(19, 19, 19)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(Rg1)
+                                .addComponent(NacimentoT1)
+                                .addComponent(NacimentoText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(RgText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(DataCad)
+                            .addComponent(DataCadText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(34, 34, 34)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(EnderecoT1)
+                            .addComponent(EnderecoText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CEPT1)
+                            .addComponent(CEPText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(EmailT1)
+                            .addComponent(EmailText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TelefoneT1)
+                            .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(CPFText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(213, 213, 213)))
+                .addGap(42, 42, 42)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -266,6 +287,8 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JTextField CEPText;
     private javax.swing.JLabel CPFT1;
     private javax.swing.JTextField CPFText;
+    private javax.swing.JLabel DataCad;
+    private javax.swing.JTextField DataCadText;
     private javax.swing.JLabel EmailT1;
     private javax.swing.JTextField EmailText;
     private javax.swing.JLabel EnderecoT1;
@@ -278,8 +301,8 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JTextField RgText;
     private javax.swing.JLabel TelefoneT1;
     private javax.swing.JTextField TelefoneText;
+    private javax.swing.JLabel Titulo;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 
     public JTextField getCEPText() {
@@ -353,6 +376,16 @@ public class CadastroCliente extends javax.swing.JFrame {
     public void setjButton2(JButton jButton2) {
         this.jButton2 = jButton2;
     }
+
+    public JTextField getDataCadText() {
+        return DataCadText;
+    }
+
+    public void setDataCadText(JTextField DataCadText) {
+        this.DataCadText = DataCadText;
+    }
+    
+    
 
     public void mensagem(String menssage){
         JOptionPane.showMessageDialog(null, menssage);
