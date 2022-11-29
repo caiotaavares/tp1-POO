@@ -54,13 +54,27 @@
                                   <Component id="CEPText" min="-2" pref="150" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="EmailT" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
-                                  <Component id="EmailText" min="-2" pref="260" max="-2" attributes="0"/>
-                                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="EmailT" min="-2" max="-2" attributes="0"/>
+                                      <Component id="CreciT" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="CreciText" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="EmailText" min="-2" pref="260" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                   <Component id="TelefoneT" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
-                                  <Component id="TelefoneText" min="-2" pref="190" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="TelefoneText" min="-2" pref="190" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="PisT" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="PisText" min="-2" pref="140" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -116,26 +130,39 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="EnderecoT" min="-2" max="-2" attributes="0"/>
                   <Component id="EnderecoText" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="CEPT" min="-2" max="-2" attributes="0"/>
-                  <Component id="CEPText" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="CEPT" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="CEPText" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+              <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="EmailT" min="-2" max="-2" attributes="0"/>
                   <Component id="EmailText" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="TelefoneT" min="-2" max="-2" attributes="0"/>
                   <Component id="TelefoneText" min="-2" pref="30" max="-2" attributes="0"/>
+                  <Component id="EmailT" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="CreciText" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="CreciT" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="PisText" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="PisT" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="48" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="SalarioT" min="-2" max="-2" attributes="0"/>
                   <Component id="SalarioText" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="DataT" min="-2" max="-2" attributes="0"/>
                   <Component id="DataText" min="-2" pref="30" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" pref="30" max="-2" attributes="0"/>
-              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -262,6 +289,28 @@
         <Property name="text" type="java.lang.String" value="Data de Admiss&#xe3;o"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JLabel" name="CreciT">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Creci:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="PisT">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pis:"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JTextField" name="NomeText">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NomeTextActionPerformed"/>
@@ -304,6 +353,10 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="CreciText">
+    </Component>
+    <Component class="javax.swing.JTextField" name="PisText">
     </Component>
   </SubComponents>
 </Form>

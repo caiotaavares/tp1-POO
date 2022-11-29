@@ -44,6 +44,8 @@ public class CadastroCorretor extends javax.swing.JFrame {
         TelefoneT = new javax.swing.JLabel();
         SalarioT = new javax.swing.JLabel();
         DataT = new javax.swing.JLabel();
+        CreciT = new javax.swing.JLabel();
+        PisT = new javax.swing.JLabel();
         NomeText = new javax.swing.JTextField();
         CPFText = new javax.swing.JTextField();
         NacimentoText = new javax.swing.JTextField();
@@ -55,6 +57,8 @@ public class CadastroCorretor extends javax.swing.JFrame {
         SalarioText = new javax.swing.JTextField();
         DataText = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        CreciText = new javax.swing.JTextField();
+        PisText = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -101,6 +105,14 @@ public class CadastroCorretor extends javax.swing.JFrame {
         DataT.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         DataT.setForeground(new java.awt.Color(0, 0, 0));
         DataT.setText("Data de Admissão");
+
+        CreciT.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        CreciT.setForeground(new java.awt.Color(0, 0, 0));
+        CreciT.setText("Creci:");
+
+        PisT.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        PisT.setForeground(new java.awt.Color(0, 0, 0));
+        PisT.setText("Pis:");
 
         NomeText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,13 +167,23 @@ public class CadastroCorretor extends javax.swing.JFrame {
                                     .addGap(6, 6, 6)
                                     .addComponent(CEPText, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(EmailT)
-                                    .addGap(44, 44, 44)
-                                    .addComponent(EmailText, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(32, 32, 32)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(EmailT)
+                                        .addComponent(CreciT))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(CreciText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(EmailText, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGap(10, 10, 10)
                                     .addComponent(TelefoneT)
                                     .addGap(9, 9, 9)
-                                    .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(PisT)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(PisText, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(NomeT)
@@ -204,23 +226,32 @@ public class CadastroCorretor extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(EnderecoT)
                     .addComponent(EnderecoText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CEPT)
-                    .addComponent(CEPText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(CEPT)
+                        .addComponent(CEPText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(EmailT)
                     .addComponent(EmailText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TelefoneT)
-                    .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(52, 52, 52)
+                    .addComponent(TelefoneText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EmailT, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(CreciText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(CreciT))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(PisText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(PisT)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(SalarioT)
                     .addComponent(SalarioText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DataT)
                     .addComponent(DataText, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
+                .addGap(27, 27, 27)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -280,6 +311,8 @@ public class CadastroCorretor extends javax.swing.JFrame {
     private javax.swing.JTextField CEPText;
     private javax.swing.JLabel CPFT;
     private javax.swing.JTextField CPFText;
+    private javax.swing.JLabel CreciT;
+    private javax.swing.JTextField CreciText;
     private javax.swing.JLabel DataT;
     private javax.swing.JTextField DataText;
     private javax.swing.JLabel EmailT;
@@ -290,6 +323,8 @@ public class CadastroCorretor extends javax.swing.JFrame {
     private javax.swing.JTextField NacimentoText;
     private javax.swing.JLabel NomeT;
     private javax.swing.JTextField NomeText;
+    private javax.swing.JLabel PisT;
+    private javax.swing.JTextField PisText;
     private javax.swing.JLabel Rg;
     private javax.swing.JTextField RgText;
     private javax.swing.JLabel SalarioT;
@@ -380,6 +415,25 @@ public class CadastroCorretor extends javax.swing.JFrame {
         this.TelefoneText = TelefoneText;
     }
 
+    public JTextField getCreciText() {
+        return CreciText;
+    }
+
+    public void setCreciText(JTextField CreciText) {
+        this.CreciText = CreciText;
+    }
+
+
+    public JTextField getPisText() {
+        return PisText;
+    }
+
+    public void setPisText(JTextField PisText) {
+        this.PisText = PisText;
+    }
+
+    
+    
     public void mensagem(String menssage){
         JOptionPane.showMessageDialog(null, menssage);
     }

@@ -30,7 +30,8 @@ public class CadastroCorretorController {
         String salario = view.getSalarioText().getText();
         String nascimento = view.getNacimentoText().getText();
         String dataAd = view.getDataText().getText();
-        
+        String Creci = view.getCreciText().getText();
+        String Pis = view.getPisText().getText();
         
         view.mensagem("Corretor Cadastrado");
     }
