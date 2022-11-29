@@ -38,7 +38,12 @@ public class CadastroClienteController {
         String telefone = view.getTelefoneText().getText();
         cliente.setTelefone(telefone);
         String nascimento = view.getNacimentoText().getText();
+<<<<<<< HEAD
         cliente.setDataNascimento(nascimento);
+=======
+        String DataCa = view.getDataCadText().getText();
+        
+>>>>>>> 0b78d2caafe53128939ec7d52122169f13f67ffa
         
         view.mensagem("Cliente cadastrado");
     }

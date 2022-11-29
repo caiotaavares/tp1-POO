@@ -18,7 +18,8 @@ public class InformacoesClientesController {
     this.view = view;
     }
     
-    public void BuscarClientes(){
-    
+    public void AtualizarTabela(){
+        //buscar uma lista com os clientes
+        //exibir a lista na view
     }
 }
