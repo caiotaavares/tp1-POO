@@ -7,6 +7,7 @@ package model;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -117,8 +118,7 @@ public class Imobiliaria {
         this.configuracoes = configuracoes;
     }
 
-    public void cadastroImobiliaria(LocalDate dataCadastro, String nome, String cpf, String rg, String endereco,
-                                    String cep, String telefone, String email, int codigoUsuario, LocalDate dataNascimento) throws IOException {
+    public void cadastroImobiliaria(LocalDate dataCadastro, String nome, String cpf, String rg, String endereco, String cep, String telefone, String email, int codigoUsuario, LocalDate dataNascimento) throws IOException {
 
         if (Files.notExists(path)) {
             Files.createFile(path);
@@ -138,10 +138,11 @@ public class Imobiliaria {
                 dataNascimento.toString()
         );
 
-        Files.writeString(path, s);
+
+        Files.writeString(path, (System.lineSeparator() + s), StandardOpenOption.APPEND);
     }
 
-    public String mostrarImobiliaria() throws IOException {
+    public String mostrarImobiliarias() throws IOException {
         List<String> strings = Files.readAllLines(path);
 
         for (String texto: strings) {

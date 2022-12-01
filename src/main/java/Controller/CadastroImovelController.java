@@ -6,6 +6,12 @@ package Controller;
 
 import view.CadastroImovel;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.time.LocalDate;
+
 /**
  *
  * @author João Pedro
@@ -13,6 +19,7 @@ import view.CadastroImovel;
 public class CadastroImovelController {
 
     private final CadastroImovel view;
+    Path path = Path.of(".\\imovel.txt");
 
     public CadastroImovelController(CadastroImovel view) {
     this.view = view;
@@ -49,5 +56,32 @@ public class CadastroImovelController {
         
         
         view.mensagem("Imóvel Cadastrado");
+    }
+
+    public void cadastroImovel(String endereco, float areaTotal, float areaConstruida, float valorIPTU, float valorVenda,
+                               float valorAluguel, int codigoImovel, int quantDormitorios, int quantBanheiros,
+                               int quantVagasGaragem, LocalDate dataConstrucao) throws IOException {
+
+        if (Files.notExists(path)) {
+            Files.createFile(path);
+        }
+
+        String s = String.join(
+                System.getProperty("line.separator"),
+                String.valueOf(endereco),
+                String.valueOf(areaTotal),
+                String.valueOf(areaConstruida),
+                String.valueOf(valorIPTU),
+                String.valueOf(valorVenda),
+                String.valueOf(valorAluguel),
+                String.valueOf(codigoImovel),
+                String.valueOf(quantDormitorios),
+                String.valueOf(quantBanheiros),
+                String.valueOf(quantVagasGaragem),
+                String.valueOf(dataConstrucao)
+        );
+
+
+        Files.writeString(path, (System.lineSeparator() + s), StandardOpenOption.APPEND);
     }
 }

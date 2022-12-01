@@ -7,6 +7,7 @@ package model;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -64,17 +65,16 @@ public class Cliente extends Usuario {
                 email.toString(),
                 String.valueOf(codigoUsuario),
                 dataNascimento.toString()
-        );
+                );
 
-        Files.writeString(path, s);
+        Files.writeString(path, (System.lineSeparator() + s), StandardOpenOption.APPEND);
     }
 
-    public String mostrarClientes() throws IOException {
+    public void mostrarClientes() throws IOException {
         List<String> strings = Files.readAllLines(path);
 
         for (String texto : strings) {
             System.out.println(texto);
         }
-        return null;
     }
 }

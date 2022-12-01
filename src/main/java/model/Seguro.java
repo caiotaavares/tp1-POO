@@ -4,6 +4,11 @@
  */
 package model;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+
 /**
  *
  * @author Audrey
@@ -15,6 +20,7 @@ public class Seguro {
     private String tipo;
     private String descricao;
     private float valor;
+    Path path = Path.of(".\\seguro.txt");
 
     public Seguro() {
     }
@@ -73,4 +79,22 @@ public class Seguro {
                 + tipo + ", descricao=" + descricao + ", valor=" + valor + '}';
     }
 
+    public void cadastroSeguro(int codigoSeguro, String nomeSeguradora, String tipo, String descricao, float valor) throws IOException {
+
+        if (Files.notExists(path)) {
+            Files.createFile(path);
+        }
+
+        String s = String.join(
+                System.getProperty("line.separator"),
+                String.valueOf(codigoSeguro),
+                nomeSeguradora.toString(),
+                tipo.toString(),
+                descricao.toString(),
+                String.valueOf(valor)
+        );
+
+
+        Files.writeString(path, (System.lineSeparator() + s), StandardOpenOption.APPEND);
+    }
 }
