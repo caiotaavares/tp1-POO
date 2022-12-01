@@ -7,6 +7,12 @@ package Controller;
 import model.Cliente;
 import view.CadastroCliente;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.time.LocalDate;
+
 /**
  *
  * @author João Pedro
@@ -14,7 +20,8 @@ import view.CadastroCliente;
 public class CadastroClienteController {
     
     private final CadastroCliente view;
-    
+    Path path = Path.of(".\\clientes.txt");
+
     public CadastroClienteController(CadastroCliente view) {
         this.view = view;
     }
@@ -42,5 +49,28 @@ public class CadastroClienteController {
         String DataCa = view.getDataCadText().getText();
         view.mensagem("Cliente cadastrado");
     }
-    
+
+    public void cadastroCliente(LocalDate dataCadastro, String nome, String cpf, String rg, String endereco,
+                                String cep, String telefone, String email, int codigoUsuario, LocalDate dataNascimento) throws IOException, IOException {
+
+        if (Files.notExists(path)) {
+            Files.createFile(path);
+        }
+
+        String s = String.join(
+                System.getProperty("line.separator"),
+                dataCadastro.toString(),
+                nome.toString(),
+                cpf.toString(),
+                rg.toString(),
+                endereco.toString(),
+                cep.toString(),
+                telefone.toString(),
+                email.toString(),
+                String.valueOf(codigoUsuario),
+                dataNascimento.toString()
+        );
+
+        Files.writeString(path, (System.lineSeparator() + s), StandardOpenOption.APPEND);
+    }
 }
